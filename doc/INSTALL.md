@@ -13,7 +13,7 @@ easy_install ${CARLA_ROOT}/PythonAPI/carla/dist/carla-0.9.11-py3.7-linux-x86_64.
 wandb login
 ```
 
-## For RL training
+## 训练
 CARLA库的文件名有所不同，所以，
 ```
 easy_install ${CARLA_ROOT}/PythonAPI/carla/dist/carla-0.9.10-py3.7-linux-x86_64.egg
