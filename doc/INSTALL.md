@@ -8,7 +8,7 @@ conda env create -f environment.yml --name carla
 conda activate carla
 easy_install ${CARLA_ROOT}/PythonAPI/carla/dist/carla-0.9.11-py3.7-linux-x86_64.egg
 ```
-- 使用 wandb 进行实验记录，请注册一个免费账户并登录。
+- 使用 wandb 进行实验记录，注册账户并登录。
 ```
 wandb login
 ```
