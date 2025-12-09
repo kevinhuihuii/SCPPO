@@ -1,24 +1,20 @@
-## Install CARLA
-- Install CARLA 0.9.11 release
+## 安装 CARLA 0.9.11
 
-## Setup scppo
-- create conda environment.
+## 设置
+- 创建conda环境.
 ```
 cd scppo
 conda env create -f environment.yml --name carla
 conda activate carla
 easy_install ${CARLA_ROOT}/PythonAPI/carla/dist/carla-0.9.11-py3.7-linux-x86_64.egg
 ```
-- We use wandb for logging, please register a free account and login to it.
+- 使用 wandb 进行实验记录，请注册一个免费账户并登录。
 ```
 wandb login
 ```
 
 ## For RL training
-Our RL training crashed more often on CARLA 0.9.11 than on CARLA 0.9.10.1.
-So for RL training we create an environment with the CARLA 0.9.10.1 release. 
-
-the filename of the CARLA library is different
+CARLA库的文件名有所不同，所以，
 ```
 easy_install ${CARLA_ROOT}/PythonAPI/carla/dist/carla-0.9.10-py3.7-linux-x86_64.egg
 ```
